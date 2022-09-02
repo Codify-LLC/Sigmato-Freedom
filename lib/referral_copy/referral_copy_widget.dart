@@ -61,10 +61,10 @@ class _ReferralCopyWidgetState extends State<ReferralCopyWidget> {
                     ),
                   ),
                 ),
-                Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(20, 0, 0, 0),
+                Align(
+                  alignment: AlignmentDirectional(0, 0),
                   child: Container(
-                    width: 329,
+                    width: MediaQuery.of(context).size.width * 0.9,
                     height: 84,
                     decoration: BoxDecoration(
                       boxShadow: [

@@ -364,90 +364,101 @@ class _OustandingsCreditWidgetState extends State<OustandingsCreditWidget> {
               ),
             ),
             Expanded(
-              child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(20, 0, 20, 50),
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  children: [
-                    Row(
+              child: Column(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(20, 0, 20, 50),
+                    child: Row(
                       mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
-                          child: Container(
-                            width: 26,
-                            height: 26,
-                            clipBehavior: Clip.antiAlias,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
+                        Row(
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
+                              child: Container(
+                                width: 26,
+                                height: 26,
+                                clipBehavior: Clip.antiAlias,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Image.asset(
+                                  'assets/images/Untitled-4.png',
+                                ),
+                              ),
                             ),
-                            child: Image.asset(
-                              'assets/images/Untitled-4.png',
-                            ),
-                          ),
-                        ),
-                        Text(
-                          'Freedom Circle',
-                          style:
-                              FlutterFlowTheme.of(context).bodyText1.override(
+                            Text(
+                              'Freedom Circle',
+                              style: FlutterFlowTheme.of(context)
+                                  .bodyText1
+                                  .override(
                                     fontFamily: 'Seoge UI',
                                     fontSize: 16,
                                     useGoogleFonts: false,
                                   ),
-                        ),
-                      ],
-                    ),
-                    Row(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 20, 0),
-                          child: FlutterFlowIconButton(
-                            borderColor: Colors.transparent,
-                            borderRadius: 30,
-                            borderWidth: 1,
-                            buttonSize: 40,
-                            fillColor: Color(0xFFEEF7FE),
-                            icon: Icon(
-                              Icons.chevron_left,
-                              color: FlutterFlowTheme.of(context).primaryText,
-                              size: 22,
                             ),
-                            onPressed: () {
-                              print('IconButton pressed ...');
-                            },
-                          ),
+                          ],
                         ),
-                        Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 20, 0),
-                          child: FlutterFlowIconButton(
-                            borderColor: Colors.transparent,
-                            borderRadius: 30,
-                            borderWidth: 1,
-                            buttonSize: 42,
-                            fillColor: Color(0xFFE0E0E0),
-                            icon: Icon(
-                              Icons.chevron_right,
-                              color: Colors.white,
-                              size: 25,
-                            ),
-                            onPressed: () async {
-                              await Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) =>
-                                      OustandingsCreditCopyWidget(),
+                        Row(
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(0, 0, 20, 0),
+                              child: FlutterFlowIconButton(
+                                borderColor: Colors.transparent,
+                                borderRadius: 30,
+                                borderWidth: 1,
+                                buttonSize: 40,
+                                fillColor: Color(0xFFEEF7FE),
+                                icon: Icon(
+                                  Icons.chevron_left,
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryText,
+                                  size: 22,
                                 ),
-                              );
-                            },
-                          ),
+                                onPressed: () {
+                                  print('IconButton pressed ...');
+                                },
+                              ),
+                            ),
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(0, 0, 20, 0),
+                              child: FlutterFlowIconButton(
+                                borderColor: Colors.transparent,
+                                borderRadius: 30,
+                                borderWidth: 1,
+                                buttonSize: 42,
+                                fillColor: Color(0xFFE0E0E0),
+                                icon: Icon(
+                                  Icons.chevron_right,
+                                  color: Colors.white,
+                                  size: 25,
+                                ),
+                                onPressed: () async {
+                                  await Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          OustandingsCreditCopyWidget(),
+                                    ),
+                                  );
+                                },
+                              ),
+                            ),
+                          ],
                         ),
                       ],
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           ],

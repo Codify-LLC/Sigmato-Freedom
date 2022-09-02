@@ -1,3 +1,4 @@
+import '../dependent_details/dependent_details_widget.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
@@ -277,6 +278,77 @@ class _DocumentuploadCopyWidgetState extends State<DocumentuploadCopyWidget> {
                             ],
                           ),
                         ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Column(
+                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Padding(
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(20, 50, 20, 30),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 0, 10, 0),
+                                      child: Container(
+                                        width: 26,
+                                        height: 26,
+                                        clipBehavior: Clip.antiAlias,
+                                        decoration: BoxDecoration(
+                                          shape: BoxShape.circle,
+                                        ),
+                                        child: Image.asset(
+                                          'assets/images/Untitled-4.png',
+                                        ),
+                                      ),
+                                    ),
+                                    Text(
+                                      'Freedom Circle',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Seoge UI',
+                                            fontSize: 16,
+                                            useGoogleFonts: false,
+                                          ),
+                                    ),
+                                  ],
+                                ),
+                                InkWell(
+                                  onTap: () async {
+                                    await Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) =>
+                                            DependentDetailsWidget(),
+                                      ),
+                                    );
+                                  },
+                                  child: Container(
+                                    width: 42,
+                                    height: 42,
+                                    clipBehavior: Clip.antiAlias,
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                    ),
+                                    child: Image.asset(
+                                      'assets/images/Untitled-6.png',
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],

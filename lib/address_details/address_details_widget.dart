@@ -290,7 +290,7 @@ class _AddressDetailsWidgetState extends State<AddressDetailsWidget> {
                           children: [
                             Padding(
                               padding:
-                                  EdgeInsetsDirectional.fromSTEB(20, 50, 20, 0),
+                                  EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment:

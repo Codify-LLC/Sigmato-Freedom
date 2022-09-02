@@ -238,7 +238,7 @@ class _AddaddressWidgetState extends State<AddaddressWidget> {
                             padding:
                                 EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
                             child: Container(
-                              width: 157,
+                              width: MediaQuery.of(context).size.width * 0.4,
                               height: 50,
                               decoration: BoxDecoration(
                                 gradient: LinearGradient(
@@ -269,7 +269,7 @@ class _AddaddressWidgetState extends State<AddaddressWidget> {
                             ),
                           ),
                           Container(
-                            width: 157,
+                            width: MediaQuery.of(context).size.width * 0.4,
                             height: 50,
                             decoration: BoxDecoration(
                               gradient: LinearGradient(

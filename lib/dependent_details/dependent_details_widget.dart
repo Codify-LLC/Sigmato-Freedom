@@ -348,11 +348,11 @@ class _DependentDetailsWidgetState extends State<DependentDetailsWidget> {
                         children: [
                           Padding(
                             padding:
-                                EdgeInsetsDirectional.fromSTEB(20, 50, 20, 0),
+                                EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Row(
                                   mainAxisSize: MainAxisSize.max,
